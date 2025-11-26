@@ -66,7 +66,25 @@ const Terms = () => {
                       O embarque e o desembarque ocorrerão no <span className="font-semibold text-foreground">Porto de Santos</span>.
                     </span>
                   </li>
+                  <li className="flex gap-3">
+                    <span className="font-bold" style={{ color: '#0066CC' }}>•</span>
+                    <span>
+                      <span className="font-semibold text-foreground">Prêmio é intransferível.</span>
+                    </span>
+                  </li>
                 </ul>
+              </div>
+
+              <div className="mt-6 p-6 bg-[#FFD700]/10 rounded-xl border-2 border-[#FFD700]/30">
+                <div className="flex gap-3">
+                  <AlertCircle className="w-6 h-6 flex-shrink-0" style={{ color: '#0066CC' }} />
+                  <div>
+                    <h4 className="font-bold text-foreground mb-2" style={{ color: '#0066CC' }}>Condição para Validação do Prêmio</h4>
+                    <p className="text-sm text-foreground leading-relaxed font-medium">
+                      Durante todo período da campanha e até a entrega do prêmio, o consultor deve estar ativo e desenvolvendo o negócio. Caso essa regra não seja cumprida o prêmio não será validado.
+                    </p>
+                  </div>
+                </div>
               </div>
 
               <div>
