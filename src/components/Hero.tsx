@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles } from "lucide-react";
 import Countdown from "./Countdown";
-import cruiseHero from "@/assets/cruise-hero.jpg";
+import like500Banner from "@/assets/like-500-banner.png";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -9,36 +9,18 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src={cruiseHero}
-          alt="Luxury cruise ship"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
-      </div>
-
-      {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 py-20 text-center">
-        <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
-          <div className="inline-flex items-center gap-2 bg-accent/20 backdrop-blur-sm px-4 py-2 rounded-full border border-accent/30">
-            <Sparkles className="w-4 h-4 text-accent" />
-            <span className="text-sm font-medium text-accent">Promoção Exclusiva</span>
-          </div>
-
-          <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground leading-tight">
-            Like 500
-            <span className="block text-accent mt-2">Cruzeiro dos Diamantes</span>
-          </h1>
-
-          <p className="text-xl md:text-2xl text-primary-foreground/90 max-w-2xl mx-auto">
-            Concorra a uma cabine no exclusivo Cruzeiro dos Diamantes 2026
-          </p>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-[hsl(var(--ocean-deep))] to-[hsl(var(--primary))]">
+      {/* Banner */}
+      <div className="relative z-10 container mx-auto px-4 py-20">
+        <div className="max-w-6xl mx-auto space-y-8 animate-fade-in">
+          <img
+            src={like500Banner}
+            alt="Promoção Like 500 - Cruzeiro dos Diamantes 2026"
+            className="w-full h-auto rounded-2xl shadow-2xl"
+          />
 
           <div className="bg-card/10 backdrop-blur-md rounded-2xl p-8 border border-accent/20 max-w-3xl mx-auto">
-            <p className="text-primary-foreground text-lg mb-6">
+            <p className="text-primary-foreground text-lg mb-6 text-center">
               A promoção encerra em:
             </p>
             <Countdown />
