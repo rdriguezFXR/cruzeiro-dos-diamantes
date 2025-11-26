@@ -9,18 +9,28 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-[hsl(var(--ocean-deep))] to-[hsl(var(--primary))]">
-      {/* Banner */}
-      <div className="relative z-10 container mx-auto px-4 py-20">
-        <div className="max-w-6xl mx-auto space-y-8 animate-fade-in">
-          <img
-            src={like500Banner}
-            alt="Promoção Like 500 - Cruzeiro dos Diamantes 2026"
-            className="w-full h-auto rounded-2xl shadow-2xl"
-          />
+    <section className="relative flex flex-col bg-gradient-to-b from-[hsl(var(--ocean-deep))] to-[hsl(var(--primary))]">
+      {/* Banner Fullscreen */}
+      <div className="w-full">
+        {/* Banner Desktop */}
+        <img
+          src={like500Banner}
+          alt="Promoção Like 500 - Cruzeiro dos Diamantes 2026"
+          className="w-full h-auto hidden md:block"
+        />
+        {/* Banner Mobile */}
+        <img
+          src="/like500mobile4.png"
+          alt="Promoção Like 500 - Cruzeiro dos Diamantes 2026"
+          className="w-full h-auto block md:hidden"
+        />
+      </div>
 
-          <div className="bg-card/10 backdrop-blur-md rounded-2xl p-8 border border-accent/20 max-w-3xl mx-auto">
-            <p className="text-primary-foreground text-lg mb-6 text-center">
+      {/* Conteúdo abaixo do banner */}
+      <div className="relative flex flex-col items-center justify-center container mx-auto px-4 pt-4 pb-4">
+        <div className="max-w-3xl mx-auto space-y-8 animate-fade-in text-center">
+          <div className="bg-card/10 backdrop-blur-md rounded-2xl p-4 md:p-8 border border-[#0066CC]/20">
+            <p className="text-primary-foreground text-base md:text-lg mb-4 md:mb-6 text-center">
               A promoção encerra em:
             </p>
             <Countdown />
@@ -29,7 +39,8 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Button
               size="lg"
-              className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all"
+              className="text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all hover:opacity-90"
+              style={{ backgroundColor: '#FFD700', color: '#0066CC' }}
               onClick={() => scrollToSection("como-funciona")}
             >
               Como Participar
@@ -43,13 +54,6 @@ const Hero = () => {
               Ver Prêmio
             </Button>
           </div>
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
-        <div className="w-6 h-10 border-2 border-primary-foreground/30 rounded-full flex items-start justify-center p-2">
-          <div className="w-1 h-3 bg-accent rounded-full" />
         </div>
       </div>
     </section>

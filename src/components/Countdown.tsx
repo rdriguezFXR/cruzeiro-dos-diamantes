@@ -39,7 +39,7 @@ const Countdown = () => {
   }, []);
 
   return (
-    <div className="flex gap-4 justify-center flex-wrap">
+    <div className="flex gap-2 md:gap-4 justify-center flex-wrap">
       <TimeUnit value={timeLeft.days} label="Dias" />
       <TimeUnit value={timeLeft.hours} label="Horas" />
       <TimeUnit value={timeLeft.minutes} label="Minutos" />
@@ -49,9 +49,9 @@ const Countdown = () => {
 };
 
 const TimeUnit = ({ value, label }: { value: number; label: string }) => (
-  <div className="flex flex-col items-center bg-card/50 backdrop-blur-sm rounded-lg p-4 min-w-[80px] border border-accent/20">
-    <span className="text-3xl md:text-4xl font-bold text-accent">{value.toString().padStart(2, "0")}</span>
-    <span className="text-sm text-muted-foreground uppercase tracking-wider">{label}</span>
+  <div className="flex flex-col items-center bg-card/50 backdrop-blur-sm rounded-lg p-3 md:p-4 min-w-[65px] md:min-w-[80px] border border-[#0066CC]/20">
+    <span className="text-2xl md:text-4xl font-bold" style={{ color: '#003366' }}>{value.toString().padStart(2, "0")}</span>
+    <span className="text-xs md:text-sm text-muted-foreground uppercase tracking-wider">{label}</span>
   </div>
 );
 

@@ -50,11 +50,11 @@ const PrizeDetails = () => {
             return (
               <div
                 key={index}
-                className="bg-card/10 backdrop-blur-sm rounded-xl p-6 border border-primary-foreground/20 hover:border-accent/50 transition-all"
+                className="bg-card/10 backdrop-blur-sm rounded-xl p-6 border border-primary-foreground/20 hover:border-[#0066CC]/50 transition-all"
               >
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-accent/20 flex items-center justify-center flex-shrink-0">
-                    <Icon className="w-6 h-6 text-accent" />
+                  <div className="w-12 h-12 rounded-lg bg-[#0066CC]/20 flex items-center justify-center flex-shrink-0">
+                    <Icon className="w-6 h-6" style={{ color: '#0066CC' }} />
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-primary-foreground mb-2">
@@ -70,10 +70,10 @@ const PrizeDetails = () => {
           })}
         </div>
 
-        <div className="max-w-4xl mx-auto bg-card/10 backdrop-blur-sm rounded-2xl p-8 border border-accent/30">
+        <div className="max-w-4xl mx-auto bg-card/10 backdrop-blur-sm rounded-2xl p-8 border border-[#0066CC]/30">
           <div className="flex items-start gap-4 mb-6">
-            <div className="w-12 h-12 rounded-lg bg-accent/20 flex items-center justify-center flex-shrink-0">
-              <Award className="w-6 h-6 text-accent" />
+            <div className="w-12 h-12 rounded-lg bg-[#0066CC]/20 flex items-center justify-center flex-shrink-0">
+              <Award className="w-6 h-6" style={{ color: '#0066CC' }} />
             </div>
             <div>
               <h3 className="text-2xl font-bold text-primary-foreground mb-3">
@@ -83,27 +83,27 @@ const PrizeDetails = () => {
           </div>
           <ul className="space-y-3 text-primary-foreground/80">
             <li className="flex items-center gap-3">
-              <div className="w-2 h-2 rounded-full bg-accent flex-shrink-0" />
+              <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: '#0066CC' }} />
               <span>Todas as refeições a bordo do navio</span>
             </li>
             <li className="flex items-center gap-3">
-              <div className="w-2 h-2 rounded-full bg-accent flex-shrink-0" />
+              <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: '#0066CC' }} />
               <span>Taxas de serviço inclusas</span>
             </li>
             <li className="flex items-center gap-3">
-              <div className="w-2 h-2 rounded-full bg-accent flex-shrink-0" />
+              <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: '#0066CC' }} />
               <span>Taxa de embarque incluída</span>
             </li>
             <li className="flex items-center gap-3">
-              <div className="w-2 h-2 rounded-full bg-accent flex-shrink-0" />
+              <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: '#0066CC' }} />
               <span>Voucher individual e intransferível</span>
             </li>
           </ul>
         </div>
 
-        <div className="mt-8 max-w-4xl mx-auto bg-accent/10 backdrop-blur-sm rounded-xl p-6 border border-accent/30">
+        <div className="mt-8 max-w-4xl mx-auto bg-[#0066CC]/10 backdrop-blur-sm rounded-xl p-6 border border-[#0066CC]/30">
           <div className="flex items-start gap-3">
-            <Shield className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
+            <Shield className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: '#0066CC' }} />
             <p className="text-sm text-primary-foreground/70">
               <span className="font-semibold text-primary-foreground">Importante:</span> Despesas
               de deslocamento até o Porto de Santos, hospedagem antes/depois do embarque, alimentação
